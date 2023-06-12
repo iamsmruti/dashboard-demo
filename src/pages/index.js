@@ -3,9 +3,15 @@ import Heading from "@/components/Layout/Heading";
 import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
 
-import { MdEdit } from 'react-icons/md'
+import { MdEdit, MdFilterList } from 'react-icons/md'
 import { AiOutlinePlusCircle, AiFillPlusCircle } from 'react-icons/ai'
-import { BsThreeDots } from 'react-icons/bs'
+import { BsThreeDots, BsList } from 'react-icons/bs'
+import { BsFileEarmarkCheckFill } from 'react-icons/bs'
+import { BiGridAlt } from 'react-icons/bi'
+
+import { IoIosArrowDown } from 'react-icons/io'
+import { FaLock } from 'react-icons/fa';
+import { AiOutlineSearch } from 'react-icons/ai';
 
 import TabComponent from "@/components/TabComponent";
 import Sidebar from "@/components/Sidebar";
@@ -37,14 +43,56 @@ export default function Home() {
 
               <div className="flex">
                 <AvatarGroup total={24}>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                  <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-                  <Avatar alt="Agnes Walker" src="/static/images/avatar/4.jpg" />
-                  <Avatar alt="Trevor Henderson" src="/static/images/avatar/5.jpg" />
+                  <Avatar alt="Spider Man" src="https://pbs.twimg.com/media/Ee_5_WCUYAAp9i0.jpg" />
+                  <Avatar alt="Travis Howard" src="https://www.gamespot.com/a/uploads/scale_landscape/1578/15789737/4001018-0.jpg" />
+                  <Avatar alt="Agnes Walker" src="https://i.redd.it/v26ls3k8mhe61.jpg" />
+                  <Avatar alt="Trevor Henderson" src="https://wallpaperaccess.com/full/146393.jpg" />
                 </AvatarGroup>
 
                 <div className="bg-white w-fit p-3 rounded-full border-dashed border-[1px] ml-2">
-                  <AiOutlinePlusCircle />
+                  <AiOutlinePlusCircle className="text-xl"/>
+                </div>
+              </div>
+            </div>
+
+            <div className="my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 mt-10">
+              <div className="grid grid-cols-2 w-[100%] border-[1px] rounded-md">
+                <div className="flex items-center justify-center cursor-pointer border-r-[1px] py-2">
+                  <BiGridAlt className="text-xl"/>
+                  <p className="font-semibold text-[14px] ml-2">Board View</p>
+                </div>
+
+                <div className="flex items-center justify-center cursor-pointer bg-white py-2">
+                  <BsList className="text-xl"/>
+                  <p className="font-semibold text-[14px] ml-2">List View</p>
+                </div>
+              </div>
+
+              <div className="px-1 text-[14px] flex items-center text-gray-400">
+                <FaLock />
+                <p className="ml-3">Limited Access</p>
+                <IoIosArrowDown className="ml-3"/>
+              </div>
+
+              <div className="flex justify-end">
+                <SearchBar />
+              </div>
+
+              <div className="flex justify-end">
+                <div className="w-[40px] ml-2 h-[40px] text-xl flex justify-center items-center text-gray-400 rounded-md border-[1px] bg-white first-letter:">
+                  <BsFileEarmarkCheckFill />
+                </div>
+                <div className="w-[40px] ml-2 h-[40px] text-xl flex justify-center items-center text-gray-400 rounded-md border-[1px] bg-white first-letter:">
+                  <BsFileEarmarkCheckFill />
+                </div>
+                <div className="w-[40px] ml-2 h-[40px] text-xl flex justify-center items-center text-gray-400 rounded-md border-[1px] bg-white first-letter:">
+                  <BsFileEarmarkCheckFill />
+                </div>
+                <div className="w-[40px] ml-2 h-[40px] text-xl flex justify-center items-center text-gray-400 rounded-md border-[1px] bg-white first-letter:">
+                  <BsFileEarmarkCheckFill />
+                </div>
+                <div className="w-[40px] ml-2 h-[40px] text-xl flex justify-center items-center text-gray-400 rounded-md border-[1px] bg-white first-letter:">
+                  <BsFileEarmarkCheckFill />
                 </div>
               </div>
             </div>
@@ -171,6 +219,17 @@ export const Done = () => {
       <div className="bg-white flex justify-center border-[1px] rounded-md items-center py-2">
         <AiFillPlusCircle className="text-gray-400" />
       </div>
+    </div>
+  )
+}
+
+export const SearchBar = () => {
+  return (
+    <div className="relative">
+      <div className="absolute left-[12px] top-[10px]">
+        <AiOutlineSearch className="text-xl bg-white text-gray-400"/>
+      </div>
+      <input className="text-[14px] bg-white border-[1px] rounded-md outline-none px-10 py-2" placeholder="Search Tasks" />
     </div>
   )
 }

@@ -51,12 +51,12 @@ const TaskCard = ({ item }) => {
       <div className="mt-5 flex justify-between">
         <div className="flex scale-75 ml-[-20px]">
           <AvatarGroup total={item.people}>
-            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-            <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+            <Avatar alt="Remy Sharp" src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQQtVZTeLmYbmRzmPNuOzQCpNUk6Y0NJ7Ul8w_QPOl7nIBQck_8dhKQ9SO2Gp0Wph_x5Xawk0ykpHlecyk" />
+            <Avatar alt="Travis Howard" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcS2VWHHEFKiJ9yhvYW1zuBa8jRlzvqtV7SqCpBy4KTgPb1Oyh2KNJMtSPkbRDQW92pREz8QT4QaQ3mVXkY" />
           </AvatarGroup>
 
           <div className="bg-white w-fit p-3 rounded-full border-dashed border-[1px] ml-2">
-            <AiOutlinePlusCircle />
+            <AiOutlinePlusCircle className="text-xl"/>
           </div>
         </div>
 

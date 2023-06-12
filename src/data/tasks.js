@@ -1,72 +1,99 @@
 export const tasksData = [
   {
-    name: 'Model Answer',
+    name: 'System Design',
     tasks: 4,
     id: '#UI007',
-    tags: ['In Progress', 'Backlog'],
+    tags: ['In Progress', 'Placement'],
     attatchments: 2,
     messages: 5,
     people: 10
   },
   {
-    name: 'Model Answer',
+    name: 'DS & Algo',
+    tasks: 32,
+    id: '#UI007',
+    tags: ['In Progress', 'Placement'],
+    attatchments: 1,
+    messages: 5,
+    people: 10
+  },
+  {
+    name: 'Read for Sem',
     tasks: 4,
     id: '#UI007',
-    tags: ['Design', 'Backlog'],
+    tags: ['Academics', 'Backlog'],
     attatchments: 2,
     messages: 5,
     people: 10
   },
   {
-    name: 'Model Answer',
+    name: 'JavaScript',
     tasks: 4,
     id: '#UI007',
-    tags: ['Done', 'Backlog'],
+    tags: ['Done'],
     attatchments: 2,
     messages: 5,
     people: 10
   },
   {
-    name: 'Model Answer',
+    name: 'React JS',
     tasks: 4,
     id: '#UI007',
-    tags: ['Design', 'Backlog'],
+    tags: ['Done'],
     attatchments: 2,
     messages: 5,
     people: 10
   },
   {
-    name: 'Model Answer',
+    name: 'Next JS',
     tasks: 4,
     id: '#UI007',
-    tags: ['To Do', 'Backlog'],
+    tags: ['Done'],
     attatchments: 2,
     messages: 5,
     people: 10
   },
   {
-    name: 'Model Answer',
+    name: 'Spy x Family S2',
     tasks: 4,
     id: '#UI007',
-    tags: ['Design', 'Backlog'],
+    tags: ['Anime', 'Backlog'],
     attatchments: 2,
     messages: 5,
     people: 10
   },
   {
-    name: 'Model Answer',
+    name: 'Sleep 8 hrs @night',
     tasks: 4,
     id: '#UI007',
-    tags: ['Design', 'Backlog'],
+    tags: ['To Do'],
     attatchments: 2,
     messages: 5,
     people: 10
   },
   {
-    name: 'Model Answer',
+    name: 'Start-up',
     tasks: 4,
     id: '#UI007',
-    tags: ['Design', 'Backlog'],
+    tags: ['Backlog'],
+    attatchments: 2,
+    messages: 5,
+    people: 10
+  },
+  {
+    name: 'Get a Job',
+    tasks: 4,
+    id: '#UI007',
+    tags: ['Independence', 'Backlog'],
+    attatchments: 2,
+    messages: 5,
+    people: 10
+  },
+  {
+    name: 'A Gaming Setup',
+    tasks: 4,
+    id: '#UI007',
+    tags: ['Fantasy', 'Backlog'],
     attatchments: 2,
     messages: 5,
     people: 10
